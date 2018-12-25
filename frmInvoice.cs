@@ -86,6 +86,7 @@ namespace RAJAS
                         break;
                     }
                     DataRow dr = dtClientAddress.NewRow();
+                    if (dr_["Party Name"]!=DBNull.Value)
                     dr["Address"] = dr_["Party Name"];
                     dtClientAddress.Rows.Add(dr);
                 }
@@ -112,7 +113,7 @@ namespace RAJAS
                 }
                 // dsInvoiceReport.WriteXmlSchema(@"D:\dsInvoiceReport.xsd");
                 btnGenerateInvoice.Tag = dsInvoiceReport.Copy();
-
+                txtReportFromToDate.Enabled = btnPreviewReport.Enabled = true;
             }
         }
         private DataSet GetFinalReportStructureDataSet()

@@ -40,11 +40,11 @@
             this.openFileDialog_ = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog_ = new System.Windows.Forms.SaveFileDialog();
             this.gbOutput = new System.Windows.Forms.GroupBox();
+            this.btnPreviewReport = new System.Windows.Forms.Button();
+            this.txtReportFromToDate = new System.Windows.Forms.TextBox();
+            this.lblReportFromToDate = new System.Windows.Forms.Label();
             this.dgvProcess = new System.Windows.Forms.DataGridView();
             this.btnGenerateInvoice = new System.Windows.Forms.Button();
-            this.btnPreviewReport = new System.Windows.Forms.Button();
-            this.lblReportFromToDate = new System.Windows.Forms.Label();
-            this.txtReportFromToDate = new System.Windows.Forms.TextBox();
             this.gbInput.SuspendLayout();
             this.gbOutput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcess)).BeginInit();
@@ -155,6 +155,34 @@
             this.gbOutput.TabStop = false;
             this.gbOutput.Text = "Output";
             // 
+            // btnPreviewReport
+            // 
+            this.btnPreviewReport.Enabled = false;
+            this.btnPreviewReport.Location = new System.Drawing.Point(679, 19);
+            this.btnPreviewReport.Name = "btnPreviewReport";
+            this.btnPreviewReport.Size = new System.Drawing.Size(75, 23);
+            this.btnPreviewReport.TabIndex = 6;
+            this.btnPreviewReport.Text = "Preview Report";
+            this.btnPreviewReport.UseVisualStyleBackColor = true;
+            this.btnPreviewReport.Click += new System.EventHandler(this.btnPreviewReport_Click);
+            // 
+            // txtReportFromToDate
+            // 
+            this.txtReportFromToDate.Enabled = false;
+            this.txtReportFromToDate.Location = new System.Drawing.Point(395, 21);
+            this.txtReportFromToDate.Name = "txtReportFromToDate";
+            this.txtReportFromToDate.Size = new System.Drawing.Size(278, 20);
+            this.txtReportFromToDate.TabIndex = 8;
+            // 
+            // lblReportFromToDate
+            // 
+            this.lblReportFromToDate.AutoSize = true;
+            this.lblReportFromToDate.Location = new System.Drawing.Point(255, 24);
+            this.lblReportFromToDate.Name = "lblReportFromToDate";
+            this.lblReportFromToDate.Size = new System.Drawing.Size(134, 13);
+            this.lblReportFromToDate.TabIndex = 7;
+            this.lblReportFromToDate.Text = "Report From and To  Date:";
+            // 
             // dgvProcess
             // 
             this.dgvProcess.AllowUserToAddRows = false;
@@ -175,32 +203,6 @@
             this.btnGenerateInvoice.Text = "Generate Invoice";
             this.btnGenerateInvoice.UseVisualStyleBackColor = true;
             this.btnGenerateInvoice.Click += new System.EventHandler(this.btnGenerateInvoice_Click);
-            // 
-            // btnPreviewReport
-            // 
-            this.btnPreviewReport.Location = new System.Drawing.Point(679, 19);
-            this.btnPreviewReport.Name = "btnPreviewReport";
-            this.btnPreviewReport.Size = new System.Drawing.Size(75, 23);
-            this.btnPreviewReport.TabIndex = 6;
-            this.btnPreviewReport.Text = "Preview Report";
-            this.btnPreviewReport.UseVisualStyleBackColor = true;
-            this.btnPreviewReport.Click += new System.EventHandler(this.btnPreviewReport_Click);
-            // 
-            // lblReportFromToDate
-            // 
-            this.lblReportFromToDate.AutoSize = true;
-            this.lblReportFromToDate.Location = new System.Drawing.Point(255, 24);
-            this.lblReportFromToDate.Name = "lblReportFromToDate";
-            this.lblReportFromToDate.Size = new System.Drawing.Size(134, 13);
-            this.lblReportFromToDate.TabIndex = 7;
-            this.lblReportFromToDate.Text = "Report From and To  Date:";
-            // 
-            // txtReportFromToDate
-            // 
-            this.txtReportFromToDate.Location = new System.Drawing.Point(395, 21);
-            this.txtReportFromToDate.Name = "txtReportFromToDate";
-            this.txtReportFromToDate.Size = new System.Drawing.Size(278, 20);
-            this.txtReportFromToDate.TabIndex = 8;
             // 
             // frmInvoice
             // 

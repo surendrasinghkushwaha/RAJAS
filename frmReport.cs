@@ -22,6 +22,7 @@ namespace RAJAS
 
         private void frmReport_Load(object sender, EventArgs e)
         {
+            try { 
             ReportParameter[] rps = new ReportParameter[1];
             rps[0] = new ReportParameter("ReportDate", dateFromTo_);
             //rps[1] = new ReportParameter("ReportTitle", " Invoice");
@@ -40,6 +41,8 @@ namespace RAJAS
 
             rptvSalesReport.LocalReport.Refresh();
             rptvSalesReport.RefreshReport(); // refresh report
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message + " Detail:" + ex.StackTrace, "Error"); }
         }
     }
 }
